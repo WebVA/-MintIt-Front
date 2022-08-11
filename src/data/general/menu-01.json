@@ -1,0 +1,22 @@
+[
+    {
+        "id": 2,
+        "text": "Discover",
+        "path": "/explore-01"
+    },
+    {
+        "id": 3,
+        "text": "Stats",
+        "path": "/ranking"
+       
+
+    },
+    {
+        "id": 4,
+        "text": "Mint",
+        "path": "/upload-variants"     
+       
+    }
+   
+
+]
