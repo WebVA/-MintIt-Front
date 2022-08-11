@@ -5,7 +5,6 @@ import Product from "@components/product/layout-01";
 import { SectionTitleType, ProductType } from "@utils/types";
 
 function LiveExploreArea ({ data, className, space, gap }) {
-    console.log('-----LiveExploreArea------', data);
     return (
     <div
         className={clsx(
@@ -27,7 +26,7 @@ function LiveExploreArea ({ data, className, space, gap }) {
                     {data.products.map((prod) => (
                         <div
                             key={prod.id}
-                            className="col-5 col-lg-4 col-md-6 col-sm-6 col-12"
+                            className="col-5 col-lg-4 col-md-6 col-sm-6 col-12 sal-animate"
                             data-sal-delay="150"
                             data-sal="slide-up"
                             data-sal-duration="800"

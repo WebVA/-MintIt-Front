@@ -19,7 +19,7 @@ function Home02 () {
     const [pageNumber, setPageNumber] = useState(1);
 
     const onPageChageHandler = (page) => {
-        console.log('------haha-----', page);
+        console.log('Discover page: ', page);
         setPageNumber(page);
     }
 

@@ -108,7 +108,7 @@ const ExploreProductArea = ({ className, space, data }) => {
                     <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                         {data?.section_title && (
                             <SectionTitle
-                                className="mb--0"
+                                className="mb--0 sal-animate"
                                 {...data.section_title}
                             />
                         )}
