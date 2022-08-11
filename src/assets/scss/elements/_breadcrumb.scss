@@ -11,15 +11,25 @@
         text-transform: capitalize;
         margin-bottom: 0;
     }
+    .curTitle {
+        color: var(--color-primary);
+    }
     .pageTitle-line {
         display: inline-block;
         margin-bottom: 0px;
         padding: 0px;
         cursor: pointer;
+
+        transition: 0.4s;
+        &:hover {
+            color: var(--color-primary);
+        }
+
+        &:last-child {
+            margin-left: 30px;
+        }
     }
-    .pageTitle-line:last-child {
-        margin-left: 30px;
-    }
+    
     .breadcrumb-list {
         list-style: none;
         padding: 0;

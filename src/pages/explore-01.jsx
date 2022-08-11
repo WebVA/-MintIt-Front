@@ -37,8 +37,8 @@ function Home02 () {
         <main id="main-content">
             <Breadcrumb
                 pageTitle="Explore Filter"
-                pageTitle1="Explore Filter1"
-                currentPage="Explore With Filter"
+                pageTitle1="Live Explore"
+                currentPage="Explore"
                 onPageChageHandler={onPageChageHandler}
             />
             {pageNumber === 1 && <ExploreProductArea

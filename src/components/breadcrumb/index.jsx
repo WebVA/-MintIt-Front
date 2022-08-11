@@ -1,9 +1,18 @@
+import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import Anchor from "@ui/anchor";
+import { useStateWithHistory } from "react-use";
 
-const Breadcrumb = ({ pageTitle, currentPage, className, space, pageTitle1 = undefined, onPageChageHandler }) => (
-    <div
+function Breadcrumb ({ pageTitle, currentPage, className, space, pageTitle1 = undefined, onPageChageHandler }) {
+    const [toggle, setToggle] = React.useState(1);
+    const onToggleTitle = (index) => {
+        setToggle(index);
+        onPageChageHandler(index);
+    } 
+
+    return (
+        <div
         className={clsx(
             "rn-breadcrumb-inner",
             className,
@@ -14,10 +23,10 @@ const Breadcrumb = ({ pageTitle, currentPage, className, space, pageTitle1 = und
             <div className="row align-items-center">
                 {pageTitle1 !== undefined ? 
                 <div className="col-lg-6 col-md-6 col-12">
-                    <h5 className="pageTitle-line text-center text-md-start" onClick={() => onPageChageHandler(1)}>
+                    <h5 className={"pageTitle-line text-center text-md-start " + (toggle === 1 ? "curTitle" : "")} onClick={() => onToggleTitle(1)}>
                         {pageTitle}
                     </h5>
-                    <h5 className="pageTitle-line text-center text-md-start" onClick={() => onPageChageHandler(2)}>
+                    <h5 className={"pageTitle-line text-center text-md-start " + (toggle === 2 ? "curTitle" : "")} onClick={() => onToggleTitle(2)}>
                         {pageTitle1}
                     </h5>
                 </div> 
@@ -44,7 +53,8 @@ const Breadcrumb = ({ pageTitle, currentPage, className, space, pageTitle1 = und
             </div>
         </div>
     </div>
-);
+    )
+}
 
 Breadcrumb.propTypes = {
     pageTitle: PropTypes.string.isRequired,
