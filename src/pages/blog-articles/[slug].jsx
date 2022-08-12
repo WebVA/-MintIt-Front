@@ -26,7 +26,7 @@ const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => (
                             <CommentForm />
                             <RelatedPostsArea
                                 relatedPosts={relatedPosts}
-                                rootPage="/blog-col-three"
+                                rootPage="/blog-articles"
                             />
                         </div>
                         <div className="col-xl-4 col-lg-4 mt_md--40 mt_sm--40">
@@ -34,7 +34,7 @@ const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => (
                                 categories={categories}
                                 recentPosts={recentPosts}
                                 tags={tags}
-                                rootPage="/blog-col-three"
+                                rootPage="/blog-articles"
                             />
                         </div>
                     </div>

@@ -10,14 +10,14 @@ export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-const Support = () => (
+const GettingStarted = () => (
     <Wrapper>
-        <SEO pageTitle="Support" />
+        <SEO pageTitle="Getting Started" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Support Center"
-                currentPage="Support Center"
+                pageTitle="Getting Started"
+                currentPage="Getting Started"
             />
             <ServiceArea />
             <SupportArea />
@@ -26,4 +26,4 @@ const Support = () => (
     </Wrapper>
 );
 
-export default Support;
+export default GettingStarted;

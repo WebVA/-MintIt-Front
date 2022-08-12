@@ -64,27 +64,27 @@
             {
                 "id": 2,
                 "text": "Getting Started",
-                "path": "/support"
+                "path": "/getting-started"
             },
             {
                 "id": 3,
                 "text": "NFT Gen Dapp",
-                "path": "/terms-condition"
+                "path": "/nft-gen-dapp"
             },
             {
                 "id": 4,
                 "text": "Help Center",
-                "path": "/support"
+                "path": "/help-center"
             },
             {
                 "id": 5,
                 "text": "Dapp Status",
-                "path": "/terms-condition"
+                "path": "/dapp-status"
             },
             {
                 "id": 6,
                 "text": "Blog Articles",
-                "path": "/blog-col-three"
+                "path": "/blog-articles"
             },
             {
                 "id": 7,

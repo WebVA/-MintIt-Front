@@ -5,33 +5,26 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import BlogArea from "@containers/blog/layout-05";
-import { flatDeep } from "@utils/methods";
-import { getPostsByTag, getAllPosts } from "../../../lib/api";
+import { getPostsByCategory, getAllPosts } from "../../../lib/api";
 
 const BlogTwoColumn = ({ posts, title }) => (
     <Wrapper>
-        <SEO pageTitle="Blog Three Column" />
+        <SEO pageTitle="Blog Articles" />
         <Header />
         <main id="main-content">
-            <Breadcrumb pageTitle={title} currentPage="Blog Two Column" />
-            <BlogArea data={{ posts }} rootPage="/blog-col-three" />
+            <Breadcrumb pageTitle={title} currentPage="Blog Articles" />
+            <BlogArea data={{ posts }} rootPage="/blog-articles" />
         </main>
         <Footer />
     </Wrapper>
 );
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(["tags"]);
-    const tagss = [
-        ...new Set(
-            flatDeep(posts.map(({ tags }) => tags.map((tag) => tag.slug)))
-        ),
-    ];
-
+    const posts = getAllPosts(["category"]);
     return {
-        paths: tagss.map((tag) => ({
+        paths: posts.map(({ category }) => ({
             params: {
-                tag,
+                category: category.slug,
             },
         })),
         fallback: false,
@@ -39,20 +32,19 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const posts = getPostsByTag(params.tag, [
+    const posts = getPostsByCategory(params.category, [
         "title",
         "date",
         "slug",
         "image",
         "category",
         "timeToRead",
-        "tags",
     ]);
 
     return {
         props: {
             posts,
-            title: params.tag,
+            title: params.category,
             className: "template-color-1",
         },
     };

@@ -11,14 +11,14 @@ const POSTS_PER_PAGE = 8;
 
 const BlogTwoColumn = ({ posts, pagiData, page }) => (
     <Wrapper>
-        <SEO pageTitle={`Blog Three Column - Page: ${page}`} />
+        <SEO pageTitle={`Blog Articles - Page: ${page}`} />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Blog Two Column"
-                currentPage="Blog Two Column"
+                pageTitle="Blog Articles"
+                currentPage="Blog Articles"
             />
-            <BlogArea data={{ posts, pagiData }} rootPage="/blog-col-three" />
+            <BlogArea data={{ posts, pagiData }} rootPage="/blog-articles" />
         </main>
         <Footer />
     </Wrapper>

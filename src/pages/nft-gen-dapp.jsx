@@ -9,14 +9,14 @@ export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-const TermsAndConditions = () => (
+const NFTGenDapp = () => (
     <Wrapper>
-        <SEO pageTitle="Terms & Condition" />
+        <SEO pageTitle="NFT Gen Dapp" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Terms & Condition"
-                currentPage="Terms & Condition"
+                pageTitle="NFT Gen Dapp"
+                currentPage="NFT Gen Dapp"
             />
             <TermsAndConditionsArea />
         </main>
@@ -24,4 +24,4 @@ const TermsAndConditions = () => (
     </Wrapper>
 );
 
-export default TermsAndConditions;
+export default NFTGenDapp;

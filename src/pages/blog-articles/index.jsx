@@ -9,16 +9,16 @@ import { getAllPosts } from "../../lib/api";
 
 const POSTS_PER_PAGE = 8;
 
-const BlogTwoColumn = ({ posts, pagiData }) => (
+const BlogArticles = ({ posts, pagiData }) => (
     <Wrapper>
-        <SEO pageTitle="Blog three Column" />
+        <SEO pageTitle="Blog Articles" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Blog three Column"
-                currentPage="Blog three Column"
+                pageTitle="Blog Articles"
+                currentPage="Blog Articles"
             />
-            <BlogArea data={{ posts, pagiData }} rootPage="/blog-col-three" />
+            <BlogArea data={{ posts, pagiData }} rootPage="/blog-articles" />
         </main>
         <Footer />
     </Wrapper>
@@ -46,9 +46,9 @@ export async function getStaticProps() {
     };
 }
 
-BlogTwoColumn.propTypes = {
+BlogArticles.propTypes = {
     posts: PropTypes.arrayOf(PropTypes.shape({})),
     pagiData: PropTypes.shape({}),
 };
 
-export default BlogTwoColumn;
+export default BlogArticles;
