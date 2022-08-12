@@ -1,5 +1,5 @@
 const SearchForm = () => (
-    <form className="search-form-wrapper" action="/explore-04">
+    <form className="search-form-wrapper" action="/search-result">
         <input type="search" placeholder="Search Here" aria-label="Search" />
         <div className="search-icon">
             <button type="button">

@@ -3,25 +3,25 @@ import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
-import ProductArea from "@containers/explore-product/layout-01";
+import RankingArea from "@containers/ranking";
 
-// Demo Data
-import productData from "../data/categories.json";
+// Demo data for the ranking page
+import popularData from "../data/popular.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-const Product = () => (
+const Popular = () => (
     <Wrapper>
-        <SEO pageTitle="Product" />
+        <SEO pageTitle="Popular" />
         <Header />
         <main id="main-content">
-            <Breadcrumb pageTitle="Our Product" currentPage="Our Product" />
-            <ProductArea data={{ products: productData }} />
+            <Breadcrumb pageTitle="Our Top NFTs" currentPage="Ranking" />
+            <RankingArea data={{ ranking: popularData }} />
         </main>
         <Footer />
     </Wrapper>
 );
 
-export default Product;
+export default Popular;

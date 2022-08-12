@@ -7,7 +7,7 @@ import ProductArea from "@containers/product/layout-01";
 
 // Demo data
 import sellerData from "../data/sellers.json";
-import productData from "../data/products-02.json";
+import productData from "../data/explore.json";
 import notificationData from "../data/notifications.json";
 
 export async function getStaticProps() {

@@ -6,14 +6,14 @@ import Breadcrumb from "@components/breadcrumb";
 import LiveExploreArea from "@containers/live-explore/layout-02";
 
 // Demo data
-import productData from "../data/products-02.json";
+import liveAuction_Data from "../data/live-auction.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-const Home02 = () => {
-    const liveAuctionData = productData
+const LiveAuction = () => {
+    const liveAuctionData = liveAuction_Data
         .filter(
             (prod) =>
                 prod?.auction_date && new Date() <= new Date(prod?.auction_date)
@@ -21,12 +21,12 @@ const Home02 = () => {
         .slice(0, 5);
     return (
         <Wrapper>
-            <SEO pageTitle="Live Explore" />
+            <SEO pageTitle="Live Auction" />
             <Header />
             <main id="main-content">
                 <Breadcrumb
-                    pageTitle="Live Explore"
-                    currentPage="Live Explore"
+                    pageTitle="Live Auction"
+                    currentPage="Live Auction"
                 />
                 <LiveExploreArea
                     data={{
@@ -39,4 +39,4 @@ const Home02 = () => {
     );
 };
 
-export default Home02;
+export default LiveAuction;

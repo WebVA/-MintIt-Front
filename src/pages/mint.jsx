@@ -2,20 +2,20 @@ import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
-import ActivityArea from "@containers/activity";
-
-// Demo Data
-import activityData from "../data/activity.json";
+import Breadcrumb from "@components/breadcrumb";
+import UploadVariants from "@containers/upload-variants";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
+
 const Home = () => (
     <Wrapper>
-        <SEO pageTitle="Notifications" />
+        <SEO pageTitle="Mint" />
         <Header />
         <main id="main-content">
-            <ActivityArea data={{ activities: activityData }} />
+            <Breadcrumb pageTitle="Mint" />
+            <UploadVariants />
         </main>
         <Footer />
     </Wrapper>

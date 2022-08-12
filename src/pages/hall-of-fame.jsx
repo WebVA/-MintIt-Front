@@ -3,10 +3,10 @@ import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
-import ExploreProductArea from "@containers/explore-product/layout-08";
+import ProductArea from "@containers/product/layout-02";
 
 // Demo data
-import productData from "../data/products.json";
+import hallOfFameData from "../data/hall-of-fame.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -14,13 +14,19 @@ export async function getStaticProps() {
 
 const Home02 = () => (
     <Wrapper>
-        <SEO pageTitle="Explore Simple" />
+        <SEO pageTitle="Hall Of Fam" />
         <Header />
         <main id="main-content">
-            <Breadcrumb pageTitle="Explore Simple" currentPage="Simple" />
-            <ExploreProductArea
+            <Breadcrumb
+                pageTitle="Hall of Fam"
+                currentPage="Hall of Fam"
+            />
+            <ProductArea
                 data={{
-                    products: productData,
+                    section_title: {
+                        title: "Hall of Fam",
+                    },
+                    products: hallOfFameData,
                 }}
             />
         </main>

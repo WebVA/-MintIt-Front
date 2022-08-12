@@ -80,7 +80,7 @@ const Header = ({ className }) => {
                             )}
                             <div className="setting-option rn-icon-list notification-badge">
                                 <div className="icon-box">
-                                    <Anchor path={headerData.activity_link}>
+                                    <Anchor path={headerData.notification_link}>
                                         <i className="feather-bell" />
                                         <span className="badge">6</span>
                                     </Anchor>

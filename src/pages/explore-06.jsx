@@ -6,7 +6,7 @@ import Breadcrumb from "@components/breadcrumb";
 import ExploreProductArea from "@containers/explore-product/layout-03";
 
 // Demo data
-import productData from "../data/products.json";
+import productData from "../data/categories.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };

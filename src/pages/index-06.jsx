@@ -12,7 +12,7 @@ import { normalizedData } from "@utils/methods";
 // Demo data
 import homepageData from "../data/homepages/home-06.json";
 import sellerData from "../data/sellers.json";
-import productData from "../data/products.json";
+import productData from "../data/categories.json";
 import collectionsData from "../data/collections.json";
 
 export async function getStaticProps() {

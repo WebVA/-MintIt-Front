@@ -8,8 +8,8 @@ import ExploreProductArea from "@containers/explore-product/layout-01";
 import LiveExploreArea from "@containers/live-explore/layout-02";
 
 // Demo data
-import productData from "../data/products.json";
-import productData1 from "../data/products-02.json";
+import filterData from "../data/discover-filter.json";
+import liveData from "../data/discover-live.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -23,7 +23,7 @@ const Home02 = () => {
         setPageNumber(page);
     };
 
-    const liveAuctionData = productData1
+    const liveAuctionData = liveData
         .filter(
             (prod) =>
                 prod?.auction_date && new Date() <= new Date(prod?.auction_date)
@@ -32,13 +32,13 @@ const Home02 = () => {
 
     return (
         <Wrapper>
-            <SEO pageTitle="Explore Filter" />
+            <SEO pageTitle="Discover" />
             <Header />
             <main id="main-content">
                 <Breadcrumb
                     pageTitle="Explore Filter"
                     pageTitle1="Live Explore"
-                    currentPage="Explore"
+                    currentPage="Discover"
                     onPageChageHandler={onPageChageHandler}
                 />
                 {pageNumber === 1 && (
@@ -47,7 +47,7 @@ const Home02 = () => {
                             section_title: {
                                 title: "Explore Product",
                             },
-                            products: productData,
+                            products: filterData,
                         }}
                     />
                 )}

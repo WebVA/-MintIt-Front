@@ -3,29 +3,23 @@ import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
-import ExploreProductArea from "@containers/explore-product/layout-02";
+import ExploreProductArea from "@containers/explore-product/layout-08";
 
 // Demo data
-import productData from "../data/products.json";
+import productData from "../data/search-result.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-const Home02 = () => (
+const SearchResult = () => (
     <Wrapper>
-        <SEO pageTitle="Explore Isotope" />
+        <SEO pageTitle="Search Result" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Explore Style Isotop"
-                currentPage="Explore Style Isotop"
-            />
+            <Breadcrumb pageTitle="Search Result" currentPage="Search Result" />
             <ExploreProductArea
                 data={{
-                    section_title: {
-                        title: "Explore Product",
-                    },
                     products: productData,
                 }}
             />
@@ -34,4 +28,4 @@ const Home02 = () => (
     </Wrapper>
 );
 
-export default Home02;
+export default SearchResult;

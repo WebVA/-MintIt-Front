@@ -8,7 +8,7 @@ import ExploreCarouselDotsArea from "@containers/explore-product/layout-06";
 import ExploreCarouselBothArea from "@containers/explore-product/layout-07";
 
 // Demo data
-import productData from "../data/products.json";
+import productData from "../data/categories.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };

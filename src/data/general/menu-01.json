@@ -2,21 +2,16 @@
     {
         "id": 2,
         "text": "Discover",
-        "path": "/explore-01"
+        "path": "/discover"
     },
     {
         "id": 3,
         "text": "Stats",
-        "path": "/ranking"
-       
-
+        "path": "/stats"
     },
     {
         "id": 4,
         "text": "Mint",
-        "path": "/upload-variants"     
-       
+        "path": "/mint"
     }
-   
-
 ]

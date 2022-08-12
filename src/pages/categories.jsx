@@ -3,10 +3,10 @@ import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
-import ExploreProductArea from "@containers/explore-product/layout-08";
+import ExploreProductArea from "@containers/explore-product/layout-02";
 
 // Demo data
-import productData from "../data/categories.json";
+import categoryData from "../data/categories.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -14,17 +14,19 @@ export async function getStaticProps() {
 
 const Home02 = () => (
     <Wrapper>
-        <SEO pageTitle="Explore With Place Bid" />
+        <SEO pageTitle="Categories" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Explore With Place Bid"
-                currentPage="Explore With Place Bid"
+                pageTitle="Categories"
+                currentPage="Categories"
             />
             <ExploreProductArea
                 data={{
-                    products: productData.slice(0, 10),
-                    placeBid: true,
+                    section_title: {
+                        title: "Explore Category Products",
+                    },
+                    products: categoryData,
                 }}
             />
         </main>

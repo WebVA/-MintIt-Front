@@ -6,7 +6,7 @@ import Breadcrumb from "@components/breadcrumb";
 import ProductArea from "@containers/product/layout-02";
 
 // Demo data
-import productData from "../data/products-02.json";
+import exploreData from "../data/explore.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -14,19 +14,19 @@ export async function getStaticProps() {
 
 const Home02 = () => (
     <Wrapper>
-        <SEO pageTitle="Explore List Column Two" />
+        <SEO pageTitle="Explore" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Explore Style Column Two"
-                currentPage="Explore Style Column Two"
+                pageTitle="Explore"
+                currentPage="Explore"
             />
             <ProductArea
                 data={{
                     section_title: {
                         title: "OUR All NFT'S",
                     },
-                    products: productData,
+                    products: exploreData,
                 }}
             />
         </main>

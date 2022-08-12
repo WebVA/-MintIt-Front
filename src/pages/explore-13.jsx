@@ -7,7 +7,7 @@ import LiveExploreArea from "@containers/live-explore/layout-02";
 import LiveExploreCarouselArea from "@containers/live-explore/layout-01";
 
 // Demo data
-import productData from "../data/products-02.json";
+import productData from "../data/explore.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };

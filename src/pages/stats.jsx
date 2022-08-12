@@ -8,8 +8,8 @@ import RankingArea from "@containers/ranking";
 import ActivityArea from "@containers/activity";
 
 // Demo data for the ranking page
-import rankingData from "../data/ranking.json";
-import activityData from "../data/activity.json";
+import rankingData from "../data/stats-ranking.json";
+import activityData from "../data/stats-activity.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -25,13 +25,13 @@ const Product = () => {
 
     return (
         <Wrapper>
-            <SEO pageTitle="Top NFT" />
+            <SEO pageTitle="Stats" />
             <Header />
             <main id="main-content">
                 <Breadcrumb
                     pageTitle="Rankings"
                     pageTitle1="Activity"
-                    currentPage="Ranking"
+                    currentPage="Stats"
                     onPageChageHandler={onPageChageHandler}
                 />
                 {pageNumber === 1 && (

@@ -16,7 +16,7 @@ import { normalizedData } from "@utils/methods";
 
 // Demo Data
 import homepageData from "../data/homepages/home-11.json";
-import productData from "../data/products.json";
+import productData from "../data/categories.json";
 import sellerData from "../data/sellers.json";
 import collectionsData from "../data/collections.json";
 

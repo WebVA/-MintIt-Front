@@ -14,7 +14,7 @@ import { normalizedData } from "@utils/methods";
 // Demo data
 import homepageData from "../data/homepages/home-08.json";
 import sellerData from "../data/sellers.json";
-import productData from "../data/products-02.json";
+import productData from "../data/explore.json";
 import collectionsData from "../data/collections.json";
 
 export async function getStaticProps() {

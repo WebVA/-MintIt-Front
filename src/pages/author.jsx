@@ -7,7 +7,7 @@ import AuthorProfileArea from "@containers/author-profile";
 
 // Demo data
 import authorData from "../data/author.json";
-import productData from "../data/products.json";
+import productData from "../data/categories.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };

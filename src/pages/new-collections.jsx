@@ -6,25 +6,25 @@ import Breadcrumb from "@components/breadcrumb";
 import UpcomingProjectsArea from "@containers/upcoming-projects";
 
 // Demo Data
-import upcomingData from "../data/upcoming-projects.json";
+import newCollectionData from "../data/new-collection.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-const UpcomingProjects = () => (
+const NewCollection = () => (
     <Wrapper>
-        <SEO pageTitle="Upcoming Projects" />
+        <SEO pageTitle="New Collection" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Upcoming NFT Projects"
-                currentPage="Upcoming Projects"
+                pageTitle="New Collection Projects"
+                currentPage="New Collection"
             />
-            <UpcomingProjectsArea data={{ upcomingProjects: upcomingData }} />
+            <UpcomingProjectsArea data={{ upcomingProjects: newCollectionData }} />
         </main>
         <Footer space={2} />
     </Wrapper>
 );
 
-export default UpcomingProjects;
+export default NewCollection;
