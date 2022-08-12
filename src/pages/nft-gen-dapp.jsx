@@ -14,10 +14,7 @@ const NFTGenDapp = () => (
         <SEO pageTitle="NFT Gen Dapp" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="NFT Gen Dapp"
-                currentPage="NFT Gen Dapp"
-            />
+            <Breadcrumb pageTitle="NFT Gen Dapp" currentPage="NFT Gen Dapp" />
             <TermsAndConditionsArea />
         </main>
         <Footer />

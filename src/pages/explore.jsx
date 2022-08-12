@@ -17,10 +17,7 @@ const Home02 = () => (
         <SEO pageTitle="Explore" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Explore"
-                currentPage="Explore"
-            />
+            <Breadcrumb pageTitle="Explore" currentPage="Explore" />
             <ProductArea
                 data={{
                     section_title: {

@@ -15,10 +15,7 @@ const HelpCenter = () => (
         <SEO pageTitle="Help Center" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Help Center"
-                currentPage="Help Center"
-            />
+            <Breadcrumb pageTitle="Help Center" currentPage="Help Center" />
             <ServiceArea />
             <SupportArea />
         </main>

@@ -14,10 +14,7 @@ const DappStatus = () => (
         <SEO pageTitle="Dapp Status" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Dapp Status"
-                currentPage="Dapp Status"
-            />
+            <Breadcrumb pageTitle="Dapp Status" currentPage="Dapp Status" />
             <TermsAndConditionsArea />
         </main>
         <Footer />

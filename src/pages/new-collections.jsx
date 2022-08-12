@@ -21,7 +21,9 @@ const NewCollection = () => (
                 pageTitle="New Collection Projects"
                 currentPage="New Collection"
             />
-            <UpcomingProjectsArea data={{ upcomingProjects: newCollectionData }} />
+            <UpcomingProjectsArea
+                data={{ upcomingProjects: newCollectionData }}
+            />
         </main>
         <Footer space={2} />
     </Wrapper>
