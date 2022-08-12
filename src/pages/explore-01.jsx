@@ -15,13 +15,13 @@ export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-function Home02 () {
+const Home02 = () => {
     const [pageNumber, setPageNumber] = useState(1);
 
     const onPageChageHandler = (page) => {
-        console.log('Discover page: ', page);
+        console.log("Discover page: ", page);
         setPageNumber(page);
-    }
+    };
 
     const liveAuctionData = productData1
         .filter(
@@ -31,34 +31,37 @@ function Home02 () {
         .slice(0, 5);
 
     return (
-    <Wrapper>
-        <SEO pageTitle="Explore Filter" />
-        <Header />
-        <main id="main-content">
-            <Breadcrumb
-                pageTitle="Explore Filter"
-                pageTitle1="Live Explore"
-                currentPage="Explore"
-                onPageChageHandler={onPageChageHandler}
-            />
-            {pageNumber === 1 && <ExploreProductArea
-                data={{
-                    section_title: {
-                        title: "Explore Product",
-                    },
-                    products: productData,
-                }}
-            />}
-            {pageNumber === 2 && <LiveExploreArea
-                data={{
-                    products: liveAuctionData,
-                }}
-            />}
-        </main>
-        <Footer />
-    </Wrapper>
-    )
-    
+        <Wrapper>
+            <SEO pageTitle="Explore Filter" />
+            <Header />
+            <main id="main-content">
+                <Breadcrumb
+                    pageTitle="Explore Filter"
+                    pageTitle1="Live Explore"
+                    currentPage="Explore"
+                    onPageChageHandler={onPageChageHandler}
+                />
+                {pageNumber === 1 && (
+                    <ExploreProductArea
+                        data={{
+                            section_title: {
+                                title: "Explore Product",
+                            },
+                            products: productData,
+                        }}
+                    />
+                )}
+                {pageNumber === 2 && (
+                    <LiveExploreArea
+                        data={{
+                            products: liveAuctionData,
+                        }}
+                    />
+                )}
+            </main>
+            <Footer />
+        </Wrapper>
+    );
 };
 
 export default Home02;

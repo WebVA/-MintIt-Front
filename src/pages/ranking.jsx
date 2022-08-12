@@ -15,31 +15,35 @@ export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-function Product () {
+const Product = () => {
     const [pageNumber, setPageNumber] = useState(1);
 
     const onPageChageHandler = (page) => {
-        console.log('Discover page: ', page);
+        console.log("Discover page: ", page);
         setPageNumber(page);
-    }
+    };
 
     return (
         <Wrapper>
             <SEO pageTitle="Top NFT" />
             <Header />
             <main id="main-content">
-                <Breadcrumb 
-                pageTitle="Rankings" 
-                pageTitle1="Activity" 
-                currentPage="Ranking" 
-                onPageChageHandler={onPageChageHandler}
+                <Breadcrumb
+                    pageTitle="Rankings"
+                    pageTitle1="Activity"
+                    currentPage="Ranking"
+                    onPageChageHandler={onPageChageHandler}
                 />
-                {pageNumber === 1 && <RankingArea data={{ ranking: rankingData }} />}
-                {pageNumber === 2 && <ActivityArea data={{ activities: activityData }} />}
+                {pageNumber === 1 && (
+                    <RankingArea data={{ ranking: rankingData }} />
+                )}
+                {pageNumber === 2 && (
+                    <ActivityArea data={{ activities: activityData }} />
+                )}
             </main>
             <Footer />
         </Wrapper>
-    )
-}
+    );
+};
 
 export default Product;

@@ -51,6 +51,7 @@
     },
     "plugins": ["react", "react-hooks", "prettier", "jsx-a11y"],
     "rules": {
+        "no-console": "off",
         "object-curly-newline": "off",
         "import/prefer-default-export": "off",
         "prettier/prettier": "error",
@@ -64,6 +65,7 @@
         "function-paren-newline": "off",
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": "off",
+        "prefer-template": "off",
         "react/jsx-one-expression-per-line": "off",
         "no-unused-vars": [
             "warn",
@@ -81,6 +83,8 @@
         "react/no-danger": "off",
         "react/jsx-fragments": "off",
         "react/jsx-curly-newline": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
         "jsx-a11y/label-has-associated-control": [
             "error",
             {
