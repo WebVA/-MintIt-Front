@@ -13,7 +13,7 @@
             ],
             "auction_date": "2024-10-08",
             "highest_bid": {
-                "amount": "0.115KDA",
+                "amount": "0.115 KDA",
                 "bidder": {
                     "name": "Atif aslam",
                     "slug": "/author",

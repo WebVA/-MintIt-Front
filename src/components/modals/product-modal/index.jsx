@@ -28,7 +28,7 @@ const ProductModal = ({ show, handleModal, data }) => (
                 latestBid="6/30"
                 price={{
                     amount: +data.price,
-                    currency: "KDA",
+                    currency: " KDA",
                 }}
                 likeCount={300}
                 image={{ src: URL.createObjectURL(data.image) }}
