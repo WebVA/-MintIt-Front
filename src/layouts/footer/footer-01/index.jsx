@@ -37,7 +37,7 @@ const Footer = ({ space, className, data }) => (
                                                 src={image.src}
                                                 alt={
                                                     image?.alt ||
-                                                    "nuron-brand_nft"
+                                                    "Doc-brand_nft"
                                                 }
                                                 layout="fill"
                                                 objectFit="contain"

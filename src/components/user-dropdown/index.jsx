@@ -42,7 +42,7 @@ const UserDropdown = () => {
                                 <h6 className="title">
                                     <Anchor path="/product">Balance</Anchor>
                                 </h6>
-                                <span className="price">25 ETH</span>
+                                <span className="price">25 KDA</span>
                             </div>
                             <div className="button" />
                         </li>
@@ -62,7 +62,7 @@ const UserDropdown = () => {
                                 <h6 className="title">
                                     <Anchor path="/product">Balance</Anchor>
                                 </h6>
-                                <span className="price">25 ETH</span>
+                                <span className="price">25 KDA</span>
                             </div>
                             <div className="button" />
                         </li>

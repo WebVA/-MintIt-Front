@@ -17,7 +17,7 @@ const EditProfileImage = () => {
     };
 
     return (
-        <div className="nuron-information">
+        <div className="Doc-information">
             <div className="profile-change row g-5">
                 <div className="profile-left col-lg-4">
                     <div className="profile-image mb--30">

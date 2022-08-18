@@ -123,7 +123,7 @@ const CreateNewArea = ({ className, space }) => {
                                     <span>
                                         {" "}
                                         You will receive :{" "}
-                                        <strong>25.00 ETH $50,000</strong>
+                                        <strong>25.00 KDA $50,000</strong>
                                     </span>
                                 </div>
                             </div>
@@ -376,7 +376,7 @@ const CreateNewArea = ({ className, space }) => {
                                 <span>
                                     {" "}
                                     You will receive :{" "}
-                                    <strong>25.00 ETH $50,000</strong>
+                                    <strong>25.00 KDA $50,000</strong>
                                 </span>
                             </div>
                         </div>

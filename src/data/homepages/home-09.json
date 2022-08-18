@@ -236,7 +236,7 @@
         },
         {
             "section": "about-section",
-            "title": "AN NURON THEME JUST FOR GAMERS",
+            "title": "AN Doc THEME JUST FOR GAMERS",
             "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio sed non. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit."
         },
         {
@@ -274,7 +274,7 @@
                     "title": "Set up your wallet",
                     "path": "/connect",
                     "subtitle": "Step-01",
-                    "description": "Powerful features and inclusions, which makes Nuron standout, easily customizable and scalable.",
+                    "description": "Powerful features and inclusions, which makes Doc standout, easily customizable and scalable.",
                     "images": [
                         {
                             "src": "/images/icons/shape-7.png"
