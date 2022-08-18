@@ -87,7 +87,7 @@ const PersonalInformation = () => (
                 <NiceSelect
                     options={[
                         { value: "($)USD", text: "($)USD" },
-                        { value: "wETH", text: "wETH" },
+                        { value: "KDA", text: "KDA" },
                         { value: "BIT Coin", text: "BIT Coin" },
                     ]}
                     placeholder="Currency"

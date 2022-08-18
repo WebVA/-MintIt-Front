@@ -31,12 +31,12 @@
     }
 }
 
-.wETH {
+.KDA {
     position: relative;
     display: inline-block;
     &::after {
         position: absolute;
-        content: "wETH";
+        content: "KDA";
         right: -48%;
         bottom: 3px;
         color: #b7111175;

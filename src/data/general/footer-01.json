@@ -101,7 +101,7 @@
                 "title": "#21 The Wonder",
                 "path": "/product",
                 "highestBid": "Highest bid 1/20",
-                "price": "0.244wETH",
+                "price": "0.244KDA",
                 "image": {
                     "src": "/images/portfolio/portfolio-01.jpg"
                 }
@@ -111,7 +111,7 @@
                 "title": "Diamond Dog",
                 "path": "/product",
                 "highestBid": "Highest bid 1/20",
-                "price": "0.022wETH",
+                "price": "0.022KDA",
                 "image": {
                     "src": "/images/portfolio/portfolio-02.jpg"
                 }
@@ -121,7 +121,7 @@
                 "title": "Morgan11",
                 "path": "/product",
                 "highestBid": "Highest bid 1/20",
-                "price": "0.892wETH",
+                "price": "0.892KDA",
                 "image": {
                     "src": "/images/portfolio/portfolio-03.jpg"
                 }

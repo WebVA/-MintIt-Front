@@ -30,7 +30,7 @@ const PlaceBidModal = ({ show, handleModal }) => (
                     <div className="bid-content-top">
                         <div className="bid-content-left">
                             <input id="value" type="text" name="value" />
-                            <span>wETH</span>
+                            <span>KDA</span>
                         </div>
                     </div>
 
@@ -41,9 +41,9 @@ const PlaceBidModal = ({ show, handleModal }) => (
                             <span>Total bid amount</span>
                         </div>
                         <div className="bid-content-right">
-                            <span>9578 wETH</span>
-                            <span>10 wETH</span>
-                            <span>9588 wETH</span>
+                            <span>9578 KDA</span>
+                            <span>10 KDA</span>
+                            <span>9588 KDA</span>
                         </div>
                     </div>
                 </div>
